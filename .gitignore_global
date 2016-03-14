@@ -1,0 +1,5 @@
+*~
+.DS_Store
+providers/config/database.rb
+config/star_query_database.yml
+tmp/
