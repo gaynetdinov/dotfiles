@@ -1,0 +1,29 @@
+[core]
+editor = mvim -v
+excludesfile = /Users/damir.gaynetdinov/.gitignore_global
+precomposeunicode = true
+quotepath = false
+
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[user]
+	name = Damir Gaynetdinov
+	email = damir.gaynetdinov@fyber.com
+[color]
+ui = true
+
+[alias]
+flog = log --oneline --abbrev-commit --all --graph --decorate --color
+graph = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%aN>%Creset'
+d = difftool
+[github]
+	user = gaynetdinov
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
